@@ -6,5 +6,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/hadilahmed05/demo-app.git'
             }
         }
+        stage('unit testing') {
+            steps {
+                sh 'mvn test'
+            }
+        }
     }
 }
