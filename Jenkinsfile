@@ -26,6 +26,7 @@ pipeline {
             steps{
                 
                 script{
+                    tool 'Maven3.1.0'
                     
                     sh 'mvn verify'
                 }
