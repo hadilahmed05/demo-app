@@ -1,9 +1,7 @@
 pipeline {
     agent any
     agent any
-    tools {
-        maven 'Maven3.6.3' // Use the name of the configured Maven installation
-    }
+   
     stages {
         stage('git checkout') {
             steps {
