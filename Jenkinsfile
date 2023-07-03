@@ -11,6 +11,16 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('maven version'){
+            
+            steps{
+                
+                script{
+                    
+                    sh 'mvn --version'
+                }
+            }
+        }
         stage('Integration testing'){
             
             steps{
