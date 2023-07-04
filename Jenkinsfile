@@ -21,14 +21,14 @@ pipeline {
                 }
             }
         }
-        stage('Integration testing'){
+        stage('clean install'){
             
             steps{
                 
                 script{
                 
                     
-                    sh 'mvn verify'
+                    sh 'mvn clean install'
                 }
             }
         }
